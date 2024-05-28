@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Use Roboto for body text */
+}
+
+.navbar {
+    position: fixed; /* Fix the navbar position */
+    top: 0; /* Position it at the top of the screen */
+    width: 100%; /* Make it span the entire width */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2.5px solid transparent;
+    border-image: linear-gradient(to right, #FF5733, #FFC300);
+    border-image-slice: 1;
+    background-color: white; /* Set a background color to ensure text visibility */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.logo {
+    font-family: 'Inconsolata', monospace;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 30%;
+}
+
+.nav-links {
+    display: flex;
+    margin-right: 30%;
+}
+
+.nav-link {
+    margin-right: 30%;
+    text-decoration: none;
+    color: black;
+    font-family: 'Inconsolata', monospace; /* Use Inconsolata for navbar */
+    font-size: 18px;
+}
+
+.content {
+    padding: 60px; /* Increased padding for top and bottom */
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%; /* Adjust as needed */
+}
+
+.main-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.syntax-box {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 45%; /* Fixed width or max-width */
+    overflow: auto;
+    font-family: 'Fira Code', monospace; /* Use Fira Code for code snippets */
+}
+
+.syntax-box {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 0 20px; /* Keep padding on left and right */
+    border-radius: 5px;
+    max-width: 45%;
+    overflow: auto;
+}
+
+.footer {
+    background: #FF5733;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    height: 100px;
+}

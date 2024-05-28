@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Teascript{% endblock %}</title>
+    <link rel="stylesheet" href="{{ get_url(path="style.css") }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Roboto:wght@400&family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">teascript</div>
+        <div class="nav-links">
+            <a href="#" class="nav-link">home</a>
+            <a href="#" class="nav-link">docs</a>
+        </div>
+    </div>
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+    <div class="footer">
+        Made with 🍵 and ❤️
+    </div>
+</body>
+</html>
