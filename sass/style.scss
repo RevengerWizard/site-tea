@@ -131,7 +131,7 @@ body {
         white-space: nowrap;
         overflow: hidden;
         max-width: 0%;
-        animation: typing-anim 1s linear forwards;
+        animation: text-slide-anim 1s linear forwards;
         box-sizing: border-box;
     }
 
@@ -149,7 +149,7 @@ body {
 }
 
 /* The typing effect */
-@keyframes typing-anim {
+@keyframes text-slide-anim {
   from { max-width: 0;}
   to { max-width: 100%; }
 }
