@@ -63,22 +63,41 @@ body {
 
 .syntax-box {
     flex: 1;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 5px;
-    max-width: 45%; /* Fixed width or max-width */
+    padding: 0 20px; /* Keep padding on left and right */
+    width: 300px; /* Set a fixed width */
+    height: auto; /* Set height to auto */
     overflow: auto;
-    font-family: 'Fira Code', monospace; /* Use Fira Code for code snippets */
+    outline: none; /* Remove any existing outline */
+    border-left: 2px solid #E4E4E4;
+    border-right: 2px solid #E4E4E4;
+    border-bottom: 2px solid #E4E4E4;
+    border-top: none; /* Remove the top border */
+    background-color: transparent; /* Remove the background color */
 }
 
-.syntax-box {
-    flex: 1;
-    background-color: #f4f4f4;
-    padding: 0 20px; /* Keep padding on left and right */
-    border-radius: 5px;
-    max-width: 45%;
-    overflow: auto;
+/* Override Prism.js styles */
+pre[class*="language-"] {
+    background: none !important;
+    font-size: 12px !important; /* Set a smaller font size */
+    margin: 0;
+    padding: 0;
 }
+
+code[class*="language-"],
+pre[class*="language-"] {
+    color: inherit;
+    background: none;
+    font-family: inherit;
+    line-height: 1.2; /* Adjust line-height for better readability */
+    font-size: inherit;
+}
+
+/* Custom syntax highlighting */
+.language-js .token.keyword { color: #d73a49; }
+.language-js .token.string { color: #032f62; }
+.language-js .token.function { color: #6f42c1; }
+.language-js .token.variable { color: #e36209; }
+.language-js .token.comment { color: #6a737d; font-style: italic; }
 
 .footer {
     background: #FF5733;
@@ -96,7 +115,6 @@ body {
     max-width: 70%; /* Adjust as needed */
     flex: 1;
 
-
     h1 {
         width: fit-content;
         line-height: 75%;
@@ -105,7 +123,7 @@ body {
         --bg-size: 400%;
         --color-one: #FF5733;
         --color-two: #FFC300;
-        font-family: sans-serif;
+        font-family: 'Inconsolata', monospace;
         font-size: 180px;
         background: linear-gradient(
             135deg,
@@ -151,6 +169,6 @@ body {
 
 /* The typing effect */
 @keyframes text-slide-anim {
-  from { max-width: 0;}
-  to { max-width: 100%; }
+    from { max-width: 0;}
+    to { max-width: 100%; }
 }
