@@ -92,13 +92,6 @@ pre[class*="language-"] {
     font-size: inherit;
 }
 
-/* Custom syntax highlighting */
-.language-js .token.keyword { color: #d73a49; }
-.language-js .token.string { color: #032f62; }
-.language-js .token.function { color: #6f42c1; }
-.language-js .token.variable { color: #e36209; }
-.language-js .token.comment { color: #6a737d; font-style: italic; }
-
 .footer {
     background: #FF5733;
     padding: 20px 0;
